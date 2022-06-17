@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         nextBtn = findViewById(R.id.nextBtn);
         Intent iNext;
         iNext = new Intent(MainActivity.this, SecondActivity.class);
+        iNext.putExtra("title", "Home");
+        iNext.putExtra("studentName", "Sajjad");
+        iNext.putExtra("Id", 207);
 
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
